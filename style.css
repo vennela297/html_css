@@ -1,0 +1,112 @@
+body {
+}
+
+.main {
+  width: 300px;
+  margin: 0px 300px 0px 30px;
+}
+
+.main .track ul {
+  position: relative;
+  list-style-type: none;
+  padding: 0;
+  height: 400px;
+  width: 100%;
+}
+
+.main .track ul li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 400px;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+.main .track ul li:first-child {
+  opacity: 1;
+}
+.main .track ul li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slides {
+  /* margin-top: -100px; */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+.slides a {
+  border: 2px solid #fff;
+  height: 100px;
+}
+.slides a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main .track ul li:target {
+  opacity: 1;
+}
+
+.slides a:hover {
+  border: 2px solid yellow;
+}
+
+@media (max-width: 600px) {
+  .main {
+    width: 100%;
+    margin: 60px auto;
+  }
+  .slides {
+    grid-gap: 10px;
+  }
+}
+
+.btn-default {
+  flex: 1;
+  transition: 0.4s;
+  color: #fff;
+  background-color: #303030;
+  text-transform: uppercase;
+}
+
+#content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  width: 500px;
+  padding: 10px;
+}
+
+.checked {
+  color: green;
+}
+
+#leftbox {
+  float: left;
+
+  width: 20%;
+  height: 280px;
+  padding-right: 150px;
+}
+#middlebox {
+  float: left;
+
+  width: 20%;
+  height: 280px;
+}
+#rightbox {
+  float: right;
+
+  width: 20%;
+  height: 280px;
+}
+i {
+  margin-right: 5px;
+}
